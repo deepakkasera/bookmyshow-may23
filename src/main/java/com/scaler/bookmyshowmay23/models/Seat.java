@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.ManyToOne;
 
 @Getter
@@ -12,13 +14,12 @@ import javax.persistence.ManyToOne;
 public class Seat extends BaseModel {
     private String name;
 
-    @ManyToOne
+    @Enumerated(EnumType.ORDINAL)
     private SeatType seatType;
 
     private int row;
     private int column;
 
-    @ManyToOne
+    @Enumerated(EnumType.ORDINAL)
     private SeatStatus seatStatus;
-
 }

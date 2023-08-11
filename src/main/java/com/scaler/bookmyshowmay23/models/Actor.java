@@ -5,7 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.Entity;
 
-@Entity
+@Entity //Create a table for this entity.
 @Getter
 @Setter
 public class Actor extends BaseModel {
