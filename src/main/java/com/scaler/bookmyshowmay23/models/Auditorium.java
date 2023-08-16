@@ -15,6 +15,9 @@ public class Auditorium extends BaseModel {
     @OneToMany
     private List<Seat> seats;
 
+    @OneToMany(mappedBy = "auditorium")
+    private List<Show> shows;
+
     @ElementCollection
     @Enumerated(EnumType.STRING)
     private List<Feature> auditoriumFeatures;

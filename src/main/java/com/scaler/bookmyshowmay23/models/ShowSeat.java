@@ -18,5 +18,4 @@ public class ShowSeat extends BaseModel {
 
     @Enumerated(EnumType.ORDINAL)
     private ShowSeatState state;
-
 }

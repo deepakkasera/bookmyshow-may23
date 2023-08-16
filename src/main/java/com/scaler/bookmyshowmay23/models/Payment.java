@@ -24,3 +24,11 @@ public class Payment extends BaseModel {
     @ManyToOne
     private Ticket ticket;
 }
+
+/*
+Ticket & Payment ---> 1 : M
+  1        M
+  1        1
+
+ Payment & Ticket ---> M : 1
+ */
